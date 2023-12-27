@@ -18,7 +18,7 @@ class TestRandomForestClassifier(unittest.TestCase):
         clf = RandomForestClassifier(random_state=42)
 
         # Train the model using the function from your script
-        trained_model = train_and_evaluate_model(clf, X_train, y_train, X_test, y_test)
+        trained_model = train_and_evaluate_model(clf, X_train, y_train)
 
         # Make predictions on the test data
         y_pred = trained_model.predict(X_test)
